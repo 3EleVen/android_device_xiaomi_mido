@@ -33,7 +33,8 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES += device/xiaomi/mido
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -165,7 +166,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_mido
+    android.hardware.biometrics.fingerprint@2.1
 
 # FM
 PRODUCT_PACKAGES += \
