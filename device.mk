@@ -410,3 +410,7 @@ PRODUCT_COPY_FILES += \
 # Wi-Fi Display
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# Pre-opt SystemUI
+PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
+

@@ -28,10 +28,11 @@
          increase the rate of unintentional unlocks. -->
     <bool name="config_lockscreenAntiFalsingClassifierEnabled">false</bool>
 
-    <!-- Whether recents should use hardware layers for its taskviews. This flag can be enabled
-    for devices where the java drawing of round rects may be slow -->
-    <bool name="config_recents_use_hardware_layers">true</bool>
+    <!-- Smart replies in notifications: Whether we disable the feature unless the app targets P -->
+    <bool name="config_smart_replies_in_notifications_requires_targeting_p">false</bool>
 
-    <!-- Whether to use cheap, less good looking shadows for recents -->
-    <bool name="config_recents_fake_shadows">true</bool>
+    <!-- Max visible notification icons -->
+    <integer name="config_maxVisibleNotificationIcons">10</integer>
+    <integer name="config_maxVisibleNotificationIconsWhenDark">10</integer>
+
 </resources>
