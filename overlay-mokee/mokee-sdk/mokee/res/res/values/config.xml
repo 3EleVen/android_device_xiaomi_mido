@@ -85,4 +85,7 @@
          kill the foreground app. -->
     <integer name="config_backKillTimeout">1000</integer>
 
+    <!-- Button backlight -->
+    <bool name="config_deviceHasVariableButtonBrightness">true</bool>
+
 </resources>
