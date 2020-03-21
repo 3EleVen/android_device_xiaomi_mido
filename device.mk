@@ -160,10 +160,7 @@ PRODUCT_PACKAGES += \
 # Device-specific settings
 PRODUCT_PACKAGES += \
     XiaomiDoze \
-    XiaomiParts \
-    MoKeeThemesStub \
-    MoKeeBlackAccent \
-    MoKeeGrayAccent
+    XiaomiParts
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -382,7 +379,8 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.0-service.mokee
+    android.hardware.vibrator@1.0-impl \
+    android.hardware.vibrator@1.0-service
 
 # VNDK
 PRODUCT_PACKAGES += \
