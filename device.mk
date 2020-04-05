@@ -99,8 +99,7 @@ PRODUCT_PACKAGES += \
     libaudio-resampler \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libqcompostprocbundle \
-    tinymix
+    libqcompostprocbundle
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
@@ -170,7 +169,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1
+    android.hardware.biometrics.fingerprint@2.1 \
+    libunwind
 
 # FM
 PRODUCT_PACKAGES += \
@@ -379,7 +379,8 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
-    vndk-sp
+    vndk_package \
+    libstdc++.vendor
 
 # VR
 PRODUCT_PACKAGES += \
@@ -408,6 +409,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_cfg.ini
 
 # Wi-Fi Display
+PRODUCT_PACKAGES += \
+    libaacwrapper \
+    libnl
+
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
